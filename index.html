@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="max-w-4xl p-6 mx-auto">
+        <div
+            class="flex flex-col items-center justify-center mx-auto my-44 border border-pink-500 rounded-md w-96 h-72">
+            <h1 class="font-bold text-2xl font-sans text-pink-500 mb-5">Game Tebak Angka</h1>
+            <form id="formTebak" class="flex flex-col gap-4">
+                <label for="tebakan" class="text-lg font-semibold">Masukkan Angka Tebakan Anda:</label>
+                <input type="number" class="border border-pink-500 rounded-md p-2 focus:outline-none" id="tebakan">
+                <button type="submit"
+                    class="bg-pink-500 w-28 px-2 py-2 rounded-md font-medium text-white hover:bg-pink-700 duration-200 ease-out">Tebak
+                    Angka</button>
+            </form>
+            <div id="pesanTebakan" class="mt-2 text-base font-medium"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
